@@ -15,6 +15,7 @@ var version = "unknown"
 var applySleepDurationString = "10s"
 
 func main() {
+	// added a comment
 	err := cmd.Main(os.Stdout, os.Stderr, version, applySleepDurationString, os.Args)
 	if err != nil {
 		if errors.Is(err, commands.ErrBoshDiffChangesExist) {
